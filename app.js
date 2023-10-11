@@ -26,18 +26,5 @@ var PeopleModel = function () {
     new Person("Marc R."),
     new Person("Jyo R."),
   ]);
-
-  self.trash = function (index) {
-    self.people.splice(index, 1);
-  };
-  self.swap = function (from, to) {
-    if (to > self.people().length - 1 || to < 0) return;
-
-    var fromObj = self.people()[from];
-    var toObj = self.people()[to];
-    self.people()[to] = fromObj;
-    self.people()[from] = toObj;
-    self.people.valueHasMutated();
-  };
 };
 ko.applyBindings(new PeopleModel());

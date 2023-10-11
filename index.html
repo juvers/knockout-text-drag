@@ -16,23 +16,6 @@
       id="people"
       data-bind='template: { name: "personTmpl", foreach: people }'
     ></ul>
-    <div
-      class="trash"
-      data-bind="visible:dragging, event:{
-       dragover: function(data, event){
-          event.preventDefault();
-       },
-       drop: function(data, event){
-        console.log('Event', event);
-        console.log('Data', data);
-          console.log('trash', $root.drag_start_index())
-          $root.trash($root.drag_start_index())     
-          event.preventDefault();
-       }
-}"
-    >
-      <span>DELETE</span>
-    </div>
 
     <div class="dropped">
       Nigeria is a country located in West Africa. With a population of
