@@ -1,0 +1,29 @@
+li {
+  border: 1px solid black;
+  background-color: #d3d3d3;
+  margin: 5px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+.dragSource {
+  opacity: 0.4;
+}
+.dragover {
+  border-style: dashed;
+}
+
+.trash {
+  border: 1px solid red;
+  background-color: pink;
+  text-align: center;
+}
+
+.dropped {
+  height: 200px;
+  border: 1px solid #009;
+}
+
+.dropped span {
+  color: #f00;
+}
